@@ -1,0 +1,96 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.wrapper {
+  color: #444;
+  font-size: 14px;
+
+}
+
+.inner {
+  margin:0 auto;
+  width:500px;
+}
+
+h1 {
+  color:#ff7376;
+  margin:0;
+  width: 200px;
+  position: absolute;
+}
+
+p {
+  color: #ff7376;
+
+}
+
+.title {
+  top:0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 1px 0 #eee;
+}
+
+.title-inner {
+  margin:0 auto;
+  width: 920px;
+}
+
+form {
+  margin: 20px 0;
+  width: 300px;
+  position: relative;
+  left: 180px;
+}
+
+input {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.contents {
+  padding-top: 130px;
+}
+
+
+.image {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  /*float: left;*/
+  background-color: #fff;
+  margin: 20px 10px 0;
+  box-shadow: 0 2px 0 #eee;
+}
+
+.image img {
+  margin-top: 10px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.tools a {
+  text-decoration: none;
+  color: #999;
+}
+
+.tools a:hover {
+  text-decoration: underline;
+}
+
+.star {
+  color: #ffd660;
+  font-size: 18px;
+}
+
+.add-star:before {
+  content: "★";
+  cursor: pointer;
+}

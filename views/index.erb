@@ -1,0 +1,48 @@
+<!DOCTYPE html lang="ja">
+<html>
+  <head>
+    <title>画像掲示板つくっちゃうよ！</title>
+
+    <link rel="stylesheet" href="/css/style.css" media="all">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/main.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="title">
+          <div class="title-inner">
+            <h1>tumblr❤︎</h1>
+            <p>
+              毎日のお絵かきをたのしく！
+            </p>
+            <form method="post" id="ex_text" action="/" enctype="multipart/form-data">
+              <textarea name="ex_text" id="ex_text"></textarea>
+              <input type="file" name="file" value="file">
+              <input type="submit" name="submit" value="送信">
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <div class="inner">
+        <div class="contents">
+          <% @posts.each do |p| %>
+          <section>
+            <div class="image">
+              <h2><%= p["text"] %></h2>
+              <img src="/uploads/<%= p['img_file_name'] %>" />
+              <div class="tools">
+                <span class="add-star star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>"><%= p["star_count"] %></span>
+                <br>
+              </div>
+            </div>
+          </section>
+          <% end %>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>
