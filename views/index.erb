@@ -13,12 +13,12 @@
       <header>
         <div class="title">
           <div class="title-inner">
-            <h1>tumblr❤︎</h1>
+            <h1>tumblr<span>❤︎</span></h1>
             <!-- <p>
               毎日のお絵かきをたのしく！
             </p> -->
             <form method="post" id="ex_text" action="/" enctype="multipart/form-data">
-              <textarea name="ex_text" id="ex_text"></textarea>
+              <textarea name="ex_text" id="ex_text" value="タイトル"></textarea>
               <input type="file" name="file" value="file">
               <input type="submit" name="submit" value="送信">
             </form>
@@ -34,8 +34,24 @@
               <h2><%= p["text"] %></h2>
               <img src="/uploads/<%= p['img_file_name'] %>" />
               <div class="tools">
-                <span class="add-star star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>"><%= p["star_count"] %></span>
+                <span class="add-star star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>">
+                  <%= p["star_count"] %>
+                </span>
                 <br>
+
+                <div class="container">
+
+                    <input type="button" name="name" value="ほし" class="add-star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>">
+                    <ul class="star-container">
+                      <% p["star_count"].times do |i| %>
+                      <li><%= %>★</li>
+                      <% end %>
+                    </ul>
+
+
+                </div>
+
+
               </div>
             </div>
           </section>

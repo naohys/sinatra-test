@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f8f8;
+  background-color: #36465d;
 }
 
 .wrapper {
@@ -14,10 +14,14 @@ body {
 }
 
 h1 {
-  color:#ff7376;
+  color:#ffffff;
   margin:0;
   width: 200px;
   position: absolute;
+}
+
+h1 span {
+  font-size: 10px;
 }
 
 p {
@@ -30,7 +34,7 @@ p {
   left: 0;
   width: 100%;
   position: fixed;
-  background-color: #fff;
+  background-color: #36465d;
   box-shadow: 0 1px 0 #eee;
 }
 
@@ -68,6 +72,7 @@ h2 {
   background-color: #fff;
   margin: 20px 10px 0;
   box-shadow: 0 2px 0 #eee;
+  border-radius: 3px;
 }
 
 .image img {
