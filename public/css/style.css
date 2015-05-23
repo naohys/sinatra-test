@@ -14,20 +14,16 @@ body {
 }
 
 h1 {
-  color:#ffffff;
+  color:#fff;
   margin:0;
   width: 200px;
   position: absolute;
 }
 
-h1 span {
-  font-size: 10px;
-}
+/*.title-inner p {
+  color: #fff;
 
-p {
-  color: #ff7376;
-
-}
+}*/
 
 .title {
   top:0;
@@ -57,6 +53,7 @@ input {
 
 h2 {
   margin: 10px 0;
+  color: #ddd;
 }
 
 .contents {
@@ -71,14 +68,14 @@ h2 {
   /*float: left;*/
   background-color: #fff;
   margin: 20px 10px 0;
-  box-shadow: 0 2px 0 #eee;
-  border-radius: 3px;
+  box-shadow: 2px 1px 2px #26313f;
+  border-radius: 7px;
 }
 
 .image img {
   margin-top: 10px;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .tools a {
@@ -89,7 +86,7 @@ h2 {
 .tools a:hover {
   text-decoration: underline;
 }
-
+/*
 .star {
   color: #ffd660;
   font-size: 18px;
@@ -98,4 +95,22 @@ h2 {
 .add-star:before {
   content: "★";
   cursor: pointer;
+}
+*/
+
+.star-container li{
+    list-style: none;
+    width: 15px;
+    float: left;
+    color:#ffd660;
+    margin-right: 2px;
+    font-size: 14px;
+}
+
+.container input {
+  padding: 5px;
+  width: 40px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

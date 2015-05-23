@@ -16,7 +16,7 @@ $(function() {
         //var newElement = document.createElement('li');
         var $newElement = $("<li>");
         //liの中のテキスト要素（★）
-        $newElement.text('○');
+        $newElement.text('★');
 
         var $parentElement = $this.parent();
 

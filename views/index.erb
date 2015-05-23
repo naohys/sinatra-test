@@ -1,13 +1,15 @@
 <!DOCTYPE html lang="ja">
 <html>
   <head>
-    <title>画像掲示板つくっちゃうよ！</title>
+    <title>tumblr❤︎</title>
 
     <link rel="stylesheet" href="/css/style.css" media="all">
+    <link rel="stylesheet" href="/css/reset.css" media="all">
     <script src="/js/jquery.js"></script>
     <script src="/js/main.js"></script>
 
   </head>
+  <!-- ソースコードは見ないでください！恥ずかしいです///////// -->
   <body>
     <div class="wrapper">
       <header>
@@ -33,26 +35,17 @@
             <div class="image">
               <h2><%= p["text"] %></h2>
               <img src="/uploads/<%= p['img_file_name'] %>" />
-              <div class="tools">
-                <span class="add-star star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>">
-                  <%= p["star_count"] %>
-                </span>
-                <br>
 
+              <!-- はてなスターだよ！ -->
                 <div class="container">
 
-                    <input type="button" name="name" value="ほし" class="add-star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>">
+                    <input type="button" name="name" value="★" class="add-star" data-post-id="<%= p["id"] %>" id="<%= p["id"] %>">
                     <ul class="star-container">
                       <% p["star_count"].times do |i| %>
                       <li><%= %>★</li>
                       <% end %>
                     </ul>
-
-
                 </div>
-
-
-              </div>
             </div>
           </section>
           <% end %>
